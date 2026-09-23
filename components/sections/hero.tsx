@@ -42,22 +42,23 @@ const chartConfig = {
 
 export function Hero() {
   return (
-    <section className="pt-24 md:pt-27 pb-16 md:pb-20 px-4 md:px-6 bg-[linear-gradient(to_bottom_right,#e7dfef_0%,var(--card)_15%,var(--card)_85%,var(--primary)_100%)] text-white overflow-x-hidden">
+    <section className="pt-28 sm:pt-24 md:pt-27 pb-16 md:pb-20 px-4 md:px-6 bg-[linear-gradient(to_bottom_right,#e7dfef_0%,var(--card)_15%,var(--card)_85%,var(--primary)_100%)] text-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Kolom kiri - teks */}
-        <div>
-          <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-[#38BDF8] mb-6 bg-gray-800">
-            <Sparkles className="h-4 w-4" /> Solusi Bisnis Modern Terdepan
+        <div className="min-w-0">
+          <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-[#38BDF8] mb-6 bg-gray-800 max-w-full">
+            <Sparkles className="h-4 w-4 shrink-0" />
+            <span className="wrap-break-word">Solusi Bisnis Modern Terdepan</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 wrap-break-word">
             <span className="text-foreground">
               Akselerasi Pertumbuhan Bisnis Anda dengan{" "}
             </span>
             <span className="text-primary">Teknologi Digital Terbaik</span>
           </h1>
 
-          <p className="text-muted-foreground text-base md:text-lg mb-8">
+          <p className="text-muted-foreground text-base md:text-lg mb-8 wrap-break-word">
             Tingkatkan konversi, otomatisasi alur kerja, dan perluas jangkauan
             pasar Anda dengan sistem web dan operasional yang scalable dan
             mudah dikelola.
@@ -76,14 +77,14 @@ export function Hero() {
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {trustPoints.map((point) => (
               <div key={point} className="flex items-center gap-2 text-sm">
-                <CheckCircle2 className="h-4 w-4 text-[#38BDF8]" />
+                <CheckCircle2 className="h-4 w-4 text-[#38BDF8] shrink-0" />
                 {point}
               </div>
             ))}
           </div>
         </div>
 
-        <div className="rounded-2xl border border-slate-800 bg-[#111625] p-4 md:p-6 sm:flex-row shadow-2xl w-full max-w-full">
+        <div className="rounded-2xl border border-slate-800 bg-[#111625] p-4 md:p-6 shadow-2xl w-full max-w-full min-w-0">
           {/* Header Card */}
           <div className="flex flex-col sm:flex-row gap-3 mb-5">
             <div className="rounded-lg bg-card border border-slate-800 p-4 flex-1 min-w-0">
