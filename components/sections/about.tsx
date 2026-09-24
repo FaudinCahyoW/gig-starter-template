@@ -36,7 +36,7 @@ export function About() {
   return (
     <section id="about" className="py-20 px-6">
       <div className="flex justify-center mb-6">
-        <Badge className=" bg-gray-800 text-purple-200/70">
+        <Badge className=" bg-gray-800 text-[#38BDF8]">
           TENTANG KAMI
         </Badge>
       </div>

@@ -7,7 +7,7 @@ const features = [
     icon: Zap,
     badge: "Kecepatan",
     title: "Performa Super Cepat",
-    description: "Arsitektur teroptimasi dengan pemuatan halaman instan.",
+    description: "Arsitektur teroptimasi dengan pemuatan halaman instan. Memberikan performa yang efisien.",
     link: "Pelajari optimasi latensi",
     color_icon: "#e7dfef",
     bg_icon: "#111625",

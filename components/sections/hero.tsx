@@ -65,11 +65,11 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-8">
-            <Button size="lg">
+            <Button size="lg" className="cursor-pointer">
               Mulai Sekarang
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="cursor-pointer">
               Lihat Solusi
             </Button>
           </div>

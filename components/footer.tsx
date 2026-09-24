@@ -28,10 +28,8 @@ export function Footer() {
   return (
     <footer className=" py-12 px-6 bg-card/80">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 text-purple-50">
-        {/* Brand info */}
         <div>
           <span className="text-xl font-bold text-purple-50">Logo</span>
-          {/* bg-linear-to-br from-primary/80 via-primary/40 to-card p-12 md:p-16 text-center */}
           <p className="text-sm mt-3 text-purple-200/90">
             Akselerator pertumbuhan ekosistem digital dan transformasi venture
             modern terdepan.
@@ -90,7 +88,7 @@ export function Footer() {
           <p className="mb-6 text-purple-200/90">Dapatkan wawasan mingguan strategi venture langsung ke email Anda.</p>
           <div className="flex gap-2 mb-4">
             <Input type="email" placeholder="email@domain.com" className="text-sm" />
-            <Button size="sm">Kirim</Button>
+            <Button size="sm" className="cursor-pointer">Kirim</Button>
           </div>
         </div>
       </div>
